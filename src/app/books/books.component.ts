@@ -10,6 +10,7 @@ import {BooksService} from "./books.service";
 export class BooksComponent implements OnInit {
   books: Book[];
   markedBookIndex = 0;
+  index: number;
 
   constructor(private bookService: BooksService) {
   }
@@ -27,4 +28,7 @@ export class BooksComponent implements OnInit {
     this.books.splice(index, 1);
   }
 
+  onBookAdd(event) {
+    this.books.push(event);
+  }
 }

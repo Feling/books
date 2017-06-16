@@ -2,7 +2,7 @@ export class Book {
   author: string;
   date: any;
   title: string;
-  cover: string;
+  cover?: string;
 
   constructor(author: string, date: string, title: string, cover: string) {
     this.author = author;

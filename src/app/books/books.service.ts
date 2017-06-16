@@ -20,7 +20,6 @@ export class BooksService {
       });
   }
 
-
   constructor(private http: Http) {
   }
 

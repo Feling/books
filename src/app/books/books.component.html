@@ -7,6 +7,7 @@
   [book]="bks"
   [ngClass]="{marked: markedBookIndex === i}"
   (bookDeleted)="onBookDeleted(i)"
+  (bookAdd)="onBookAdd($event)"
   (click)="markedBookIndex = i"
   [index]="i"
 ></app-book>
