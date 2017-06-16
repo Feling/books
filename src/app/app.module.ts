@@ -7,13 +7,18 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 import { AppComponent } from './app.component';
-import {MdToolbarModule} from "@angular/material";
+import {MdButtonModule, MdCardModule, MdToolbarModule} from "@angular/material";
 import {BooksComponent} from './books/books.component';
+import {BookComponent} from './book/book.component';
+import {BooksService} from "./books/books.service";
+import {SpecialPipe} from "./book/special.pipe";
 
 @NgModule({
   declarations: [
     AppComponent,
-    BooksComponent
+    BooksComponent,
+    BookComponent,
+    SpecialPipe
   ],
   imports: [
     BrowserModule,
@@ -21,9 +26,11 @@ import {BooksComponent} from './books/books.component';
     HttpModule,
     BrowserAnimationsModule,
     NgbModule.forRoot(),
-    MdToolbarModule
+    MdToolbarModule,
+    MdCardModule,
+    MdButtonModule
   ],
-  providers: [],
+  providers: [BooksService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

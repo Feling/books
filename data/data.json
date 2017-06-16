@@ -1,5 +1,4 @@
-{
-  "booksArray": [
+[
     {
       "author": "George Orwell",
       "date": "04/25/1985",
@@ -55,4 +54,3 @@
       "cover": "to_kill_a_mocking_bird.jpg"
     }
   ]
-}
