@@ -8,10 +8,12 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 import { AppComponent } from './app.component';
 import {MdToolbarModule} from "@angular/material";
+import {BooksComponent} from './books/books.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    BooksComponent
   ],
   imports: [
     BrowserModule,
