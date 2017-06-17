@@ -2,6 +2,10 @@
   "name": "books",
   "version": "0.0.0",
   "license": "MIT",
+  "engines": {
+    "node": "7.0.0",
+    "npm": "5.0.3"
+  },
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
