@@ -3,43 +3,43 @@
       "author": "George Orwell",
       "date": "04/25/1985",
       "title": "$$$1984!!!nineteen eighty four",
-      "cover": "src/assets/data/img/1984.jpg"
+      "cover": "src/assets/img/1984.jpg"
     },
     {
       "author": "George R. R. Martin",
       "date": "04/25/1985",
       "title": "A Game Of Thrones",
-      "cover": "src/assets/data/img/a_game_of_thrones.jpg"
+      "cover": "src/assets/img/a_game_of_thrones.jpg"
     },
     {
       "author": "Elizabath Murphy",
       "date": "04/25/1985",
       "title": "Making Things Happen",
-      "cover": "src/assets/data/img/making_things_happen.png"
+      "cover": "src/assets/img/making_things_happen.png"
     },
     {
       "author": "Mandy Cooper",
       "date": "04/25/1985",
       "title": "Paper Craft",
-      "cover": "src/assets/data/img/paper_craft.png"
+      "cover": "src/assets/img/paper_craft.png"
     },
     {
       "author": "Tove Jansson",
       "date": "04/25/1985",
       "title": "The Iceberg",
-      "cover": "src/assets/data/img/the_iceberg.jpg"
+      "cover": "src/assets/img/the_iceberg.jpg"
     },
     {
       "author": "Paraic O'donnell",
       "date": "04/25/1985",
       "title": "The Maker Of SWANS",
-      "cover": "src/assets/data/img/the_maker_of_swans.jpg"
+      "cover": "src/assets/img/the_maker_of_swans.jpg"
     },
     {
       "author": "Sarah Hall",
       "date": "04/25/1985",
       "title": "The Wolf border",
-      "cover": "src/assets/data/img/the_wolf_border.jpg"
+      "cover": "src/assets/img/the_wolf_border.jpg"
     },
     {
       "author": "Emily Robbins",
@@ -51,6 +51,6 @@
       "author": "Harper Lee",
       "date": "04/25/1985",
       "title": "to kill a mocking bird",
-      "cover": "src/assets/data/img/to_kill_a_mocking_bird.jpg"
+      "cover": "src/assets/img/to_kill_a_mocking_bird.jpg"
     }
   ]
