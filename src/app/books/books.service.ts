@@ -7,7 +7,7 @@ import {Http} from "@angular/http";
 export class BooksService {
 
   loadBooks(): Observable<Book[]> {
-    return this.http.get('data/data.json')
+    return this.http.get('src/assets/data/data.json')
       .map(res => {
         return res.json().map(book => {
           return new Book(
