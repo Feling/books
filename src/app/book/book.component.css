@@ -19,3 +19,6 @@
   transition: border-color 0.5s ease-out;
 }
 
+.image {
+  width: 200px;
+}
