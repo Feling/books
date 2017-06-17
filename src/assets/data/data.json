@@ -39,13 +39,13 @@
       "author": "Sarah Hall",
       "date": "04/25/1985",
       "title": "The Wolf border",
-      "cover": "src/assets/img/the_wolf_border.jpg"
+      "cover": "assets/img/the_wolf_border.jpg"
     },
     {
       "author": "Emily Robbins",
       "date": "04/25/1985",
       "title": "The World of abstract art",
-      "cover": "src/assets/img/the_world_of_abstract_art.png"
+      "cover": "assets/img/the_world_of_abstract_art.png"
     },
     {
       "author": "Harper Lee",
