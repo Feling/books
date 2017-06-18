@@ -3,7 +3,7 @@
     <md-card-header>
       <md-card-title>Author: {{book.author}}</md-card-title>
       <md-card-title>Title: {{book.title |titlecase |special}}</md-card-title>
-      <md-card-title>Date: {{book.date }}</md-card-title>
+      <md-card-title>Date: {{book.date | date:'dd/MM/y'}}</md-card-title>
       <div class="image">
         <img md-card-md-image="img" src={{book.cover}}>
       </div>
