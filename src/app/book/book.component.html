@@ -53,11 +53,10 @@
           [ngModel]="book.title |titlecase | special"
           required minlength="1">
       </div>
-      <button type="submit" class="btn btn-success" [disabled]="!f.valid">Add new book</button>
-      <button type="button" class="btn btn-success" [disabled]="!f.valid" (click)="editBook(f)">Edit</button>
     </form>
   </div>
   <div class="modal-footer">
+    <button type="button" class="btn btn-success" [disabled]="!f.valid" (click)="editBook(f)">Edit</button>
     <button type="button" class="btn btn-secondary" (click)="c('Close click')">Close</button>
   </div>
 </ng-template>
