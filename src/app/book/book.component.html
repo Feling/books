@@ -51,7 +51,8 @@
           class="form-control"
           id="title"
           name="title"
-          [ngModel]="book.title |titlecase | special">
+          [ngModel]="book.title |titlecase | special"
+          required minlength="1">
       </div>
       <button type="submit" class="btn btn-success" [disabled]="!f.valid">Add new book</button>
       <button type="button" class="btn btn-success" [disabled]="!f.valid" (click)="editBook(f)">Edit</button>

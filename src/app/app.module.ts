@@ -4,7 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import {NgbActiveModal, NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 import { AppComponent } from './app.component';
 import {MdButtonModule, MdCardModule, MdToolbarModule} from "@angular/material";
@@ -30,7 +30,7 @@ import {SpecialPipe} from "./book/special.pipe";
     MdCardModule,
     MdButtonModule
   ],
-  providers: [BooksService],
+  providers: [BooksService, NgbActiveModal],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
