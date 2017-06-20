@@ -16,7 +16,7 @@ export class BookComponent implements OnInit {
   closeResult: string;
   close: any;
 
-  constructor(private modalService: NgbModal, private ngbActiveModalService: NgbActiveModal) {
+  constructor(private modalService: NgbModal) {
   }
 
   ngOnInit() {
@@ -30,7 +30,6 @@ export class BookComponent implements OnInit {
     this.book.author = form.value.author;
     this.book.date = form.value.date;
     this.book.title = form.value.title;
-    this.ngbActiveModalService.dismiss();
     this.close.close();
   }
 

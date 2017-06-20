@@ -1,3 +1,9 @@
 .marked {
   border: 2px solid blue;
 }
+
+.buttons {
+  display: grid;
+  padding: 10px;
+}
+

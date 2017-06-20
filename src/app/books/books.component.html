@@ -1,5 +1,7 @@
-
-<app-book
+<div class="buttons">
+  <button class="btn btn-lg btn-outline-primary" (click)="open(content)">Add</button>
+</div>
+<app-book class="book"
   *ngFor="let bks of books; let i = index"
   [book]="bks"
   [ngClass]="{marked: markedBookIndex === i}"
@@ -8,3 +10,49 @@
   (click)="markedBookIndex = i"
   [index]="i"
 ></app-book>
+
+<ng-template #content let-c="close" let-d="dismiss">
+  <div class="modal-header">
+    <h4 class="modal-title">Book adding</h4>
+    <button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <form (ngSubmit)="addnewBook(f)" #f="ngForm">
+      <div class="form-group">
+        <label for="author">Author</label>
+        <input
+          type="text"
+          class="form-control"
+          id="author"
+          name="author"
+          [ngModel]="author"
+          required minlength="1">
+      </div>
+      <div class="form-group">
+        <label for="date">Date</label>
+        <input
+          type="date"
+          class="form-control"
+          id="date"
+          name="date"
+          [ngModel]="date">
+      </div>
+      <div class="form-group">
+        <label for="title">Title</label>
+        <input
+          type="text"
+          class="form-control"
+          id="title"
+          name="title"
+          [ngModel]="title |titlecase | special"
+          required minlength="1">
+      </div>
+      <button type="submit" class="btn btn-success" [disabled]="!f.valid">Add new book</button>
+    </form>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-secondary" (click)="c('Close click')">Close</button>
+  </div>
+</ng-template>

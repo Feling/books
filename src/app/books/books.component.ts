@@ -1,6 +1,8 @@
 import {Component, OnInit} from '@angular/core';
 import {Book} from "./book.model";
 import {BooksService} from "./books.service";
+import {NgbModal} from "@ng-bootstrap/ng-bootstrap";
+import {NgForm} from "@angular/forms";
 
 @Component({
   selector: 'app-books',
@@ -9,10 +11,13 @@ import {BooksService} from "./books.service";
 })
 export class BooksComponent implements OnInit {
   books: Book[];
+  title = ' ';
   markedBookIndex = 0;
   index: number;
+  close: any;
 
-  constructor(private bookService: BooksService) {
+
+  constructor(private bookService: BooksService, private modalService: NgbModal) {
   }
 
   ngOnInit() {
@@ -30,5 +35,15 @@ export class BooksComponent implements OnInit {
 
   onBookAdd(event) {
     this.books.push(event);
+  }
+
+  open(content) {
+    this.close = this.modalService.open(content);
+  }
+
+  addnewBook(form: NgForm) {
+    const newBook = new Book(form.value.author, form.value.date, form.value.title, 'test');
+    this.books.push(newBook);
+    this.close.close();
   }
 }
