@@ -2,13 +2,13 @@
   <button class="btn btn-lg btn-outline-primary" (click)="open(content)">Add</button>
 </div>
 <app-book class="book"
-  *ngFor="let bks of books; let i = index"
-  [book]="bks"
-  [ngClass]="{marked: markedBookIndex === i}"
-  (bookDeleted)="onBookDeleted(i)"
-  (bookAdd)="onBookAdd($event)"
-  (click)="markedBookIndex = i"
-  [index]="i"
+          *ngFor="let bks of books; let i = index"
+          [book]="bks"
+          [ngClass]="{marked: markedBookIndex === i}"
+          (bookDeleted)="onBookDeleted(i)"
+          (bookAdd)="onBookAdd($event)"
+          (click)="markedBookIndex = i"
+          [index]="i"
 ></app-book>
 
 <ng-template #content let-c="close" let-d="dismiss">

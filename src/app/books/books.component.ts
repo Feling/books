@@ -42,7 +42,7 @@ export class BooksComponent implements OnInit {
   }
 
   addnewBook(form: NgForm) {
-    const newBook = new Book(form.value.author, form.value.date, form.value.title, 'test');
+    const newBook = new Book(form.value.author, form.value.date, form.value.title, '/assets/img/ng.png');
     this.books.push(newBook);
     this.close.close();
   }

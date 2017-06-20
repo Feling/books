@@ -13,7 +13,6 @@ export class BookComponent implements OnInit {
   @Input() index: number;
   @Output() bookDeleted = new EventEmitter<void>();
   @Output() bookAdd = new EventEmitter<Book>();
-  closeResult: string;
   close: any;
 
   constructor(private modalService: NgbModal) {
@@ -38,11 +37,11 @@ export class BookComponent implements OnInit {
   }
 
 
-
+  /*
   addBook(form: NgForm) {
     const newBook = new Book(form.value.author, form.value.date, form.value.title, 'test');
     this.bookAdd.emit(newBook);
     this.close.close();
-  }
+   }*/
 
 }

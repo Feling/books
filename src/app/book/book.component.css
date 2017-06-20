@@ -10,13 +10,11 @@
 
 :host {
   display: inline-block;
-  border-radius: 3px;
-  margin: 20px 0;
-  width: 425px;
+  margin: 20px 10px;
+  width: 424px;
   /* padding: 20px;*/
   box-shadow: 3px 3px 2px #ccc;
   /* transition: border-color 0.5s ease-out;*/
-  transition: border-color 0.5s ease-out;
 }
 
 .image {
@@ -25,4 +23,8 @@
 
 .mat-card-actions {
   display: grid;
+}
+
+.btn-outline-primary {
+  margin: 1px;
 }
